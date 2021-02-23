@@ -1,0 +1,233 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+#navBar {
+  background-color: #2f3542;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  border-bottom: 2px solid #e84118;
+}
+#navBar h1 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  margin: 0px 7px;
+  font-size: 32px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+#navBar span {
+  color: #e84118;
+}
+#socialIcon ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#socialIcon ul li a {
+  color: white;
+  font-size: 34px;
+  padding: 7px 10px;
+}
+#socialIcon ul li a:hover {
+  color: #e84118;
+  transition: 0.7s;
+}
+/* first section */
+#FirstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px dashed #b2bec3;
+  margin: 11px 90px;
+}
+#FirstSection h1 {
+  font-size: 30px;
+  margin: 18px 0px;
+  font-family: system-ui;
+  border-bottom: 1px solid #b2bec3;
+}
+#FirstSection input {
+  width: 137px;
+  height: 28px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #2d3436;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Second Section */
+#SecondSection {
+  margin: 10px 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#globalData {
+  width: 325px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #636e72;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin: 11px 16px;
+}
+#globalData:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#globalData ul li {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+#nameDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 2px solid #ecf0f1;
+  width: 92%;
+}
+#nameDate h3 {
+  font-size: 33px;
+  font-family: monospace;
+  padding: 7px 0px;
+}
+#nameDate p {
+  font-size: 20px;
+  margin: 6px 0px;
+}
+
+
+/* footer section */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#2f3542;
+}
+footer span  {
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    padding: 2px 0px;
+}
+footer span a {
+    color: white;
+    font-size: 22px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+footer span a:hover{
+    color: #e84118;
+  transition: 0.7s;
+}
+@media only screen and (max-width: 1250px) {
+  #globalData ul li {
+    font-size: 18px;
+  }
+  #globalData {
+    width: 300px;
+  }
+  #SecondSection {
+    margin: 10px 10px;
+  }
+  #FirstSection {
+    margin: 11px 40px;
+  }
+}
+@media only screen and (max-width: 1015px) {
+  #globalData ul li {
+    font-size: 20px;
+  }
+  #globalData {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 684px) {
+    #SecondSection {
+        margin: 10px 6px;
+    }
+  #nameDate p {
+    font-size: 18px;
+  }
+  #nameDate h3 {
+    font-size: 29px;
+  }
+  #globalData {
+    width: 237px;
+    margin: 7px 6px;
+  }
+  #globalData ul li {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:510px){
+    #globalData {
+        width: 85%;
+    }
+    #globalData ul li {
+        font-size: 23px;
+    }
+    #FirstSection {
+        margin: 11px 10px;
+    }
+    #socialIcon ul li a {
+        
+        font-size: 24px;
+        padding: 7px 5px;
+    }
+    #navBar h1 {
+    font-size: 28px;
+    }
+}
+@media only screen and (max-width : 380px){
+    #globalData ul li {
+        font-size: 18px;
+    }
+    #FirstSection input {
+        width: 111px;
+    }
+    #FirstSection h1 {
+        font-size: 25px
+    }
+}
+@media only screen and (max-width:300px){
+    #navBar h1 {
+        font-size: 22px;
+    }
+    #SecondSection {
+        width: 100%;
+        margin: 0px;
+    }
+    #globalData ul li {
+        font-size: 15px;
+    }
+    #nameDate p {
+        font-size: 15px;
+    }
+    #socialIcon ul li a {
+        font-size: 16px;
+        padding: 7px 3px;
+    }
+}
